@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Brankas</title>
+<meta name="theme-color" content="#0e1116">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="lock"><form id="lform"><h1>Brankas</h1><input id="lpw" type="password" placeholder="Password master" autocomplete="current-password"><button class="pri">Buka</button><p id="lerr"></p></form></div>
+<header>
+  <h1>Brankas</h1>
+  <div class="seg"><button id="mView" class="on">Lihat</button><button id="mEdit">Edit</button></div>
+  <button id="menuBtn" class="ic" aria-label="Menu">⋮</button>
+</header>
+<div id="menu" hidden></div>
+<div class="search"><input id="q" type="search" placeholder="Cari…"></div>
+<main id="list"></main>
+<button id="fab" hidden aria-label="Tambah">+</button>
+<input id="file" type="file" accept=".json,application/json" hidden>
+<datalist id="labels"><option value="User"><option value="Password"><option value="PIN"><option value="Email"><option value="URL"><option value="No. HP"><option value="Rekening"><option value="Catatan"></datalist>
+<dialog id="dlg"></dialog>
+<dialog id="dlg2"></dialog>
+<div id="toast" popover="manual"></div>
+<script src="app.js"></script>
+</body>
+</html>
