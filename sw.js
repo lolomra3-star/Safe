@@ -1,4 +1,4 @@
-const C = 'brankas-v3';
+const C = 'brankas-v4';
 const A = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable.png'];
 self.addEventListener('install', e => e.waitUntil(caches.open(C).then(c => Promise.all(A.map(u => c.add(u).catch(() => {})))).then(() => self.skipWaiting())));
 self.addEventListener('activate', e => e.waitUntil(
